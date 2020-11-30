@@ -10,7 +10,9 @@ import Phones from './Containers/Phones';
 import Phone from './Containers/Phone';
 import Basket from './Containers/Basket';
 import SignIn from './Containers/SignIn';
-import FormPay from './Containers/FormPay';
+import Pay from './Containers/Pay';
+import EmailPay from './Containers/EmailPay';
+import CardPay from './Containers/CardPay';
 
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory,store);
@@ -25,7 +27,9 @@ const jsx = (
             <Route path="/Phones/:id" component={Phone} />
             <Route path="/basket" component={Basket} />
             <Route path="/signin" component={SignIn} />
-            <Route path="/formpay" component={FormPay}/>
+            <Route path="/pay" component={Pay}/>
+            <Route path="/emailpay" component={EmailPay}/>
+            <Route path="/cardpay" component={CardPay}/>
             
        </Router>
     </Provider>

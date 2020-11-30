@@ -41,7 +41,7 @@ class SignIn extends React.Component {
                                 className="btn btn-success"
                   >
         
-                                <a href="/formpay">Register</a>
+                                <a href="/pay">Register</a>
                   </button>
 
                 </div>
