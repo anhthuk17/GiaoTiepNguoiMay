@@ -1,9 +1,14 @@
 import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
 
 class EmailPay extends React.Component {
     render() {
         return (
-        
+          <div className='view-container'>
+          <div >
+                      <Header/>
+                  </div>
             <div className="container">
             <div className="panel panel-primary">
               <div className="panel-heading">
@@ -31,6 +36,10 @@ class EmailPay extends React.Component {
 
               </div>
             </div>
+          </div>
+          <div>
+            <Footer/>
+          </div>
           </div>
             
         )

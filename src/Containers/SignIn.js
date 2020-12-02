@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
 
 class SignIn extends React.Component {
     render() {
@@ -13,6 +15,10 @@ class SignIn extends React.Component {
         //         <button className="btn btn-lg btn-primary btn-block" type="button"> Sign in
         //         </button>
         //     </form>
+        <div className="view-container">
+                <div >
+                    <Header/>
+                </div>
         <div className="container">
               <div className="panel panel-primary">
                 <div className="panel-heading">
@@ -46,6 +52,10 @@ class SignIn extends React.Component {
 
                 </div>
               </div>
+            </div>
+            <div >
+                    <Footer/>
+                </div>
             </div>
         )
     }

@@ -5,6 +5,8 @@ import {getPhonesById} from '../selectors/Phones';
 import R from 'ramda';
 import BasketCart  from './BasketCart';
 import {Link} from 'react-router';
+import Header from './Header';
+import Footer from './Footer';
 
 
 class Phone extends React.Component{
@@ -28,6 +30,7 @@ class Phone extends React.Component{
         // console.log("columnFields ", columnFields);
         return columnFields.map(([key,value])=>{
             return(
+                
                 <div className='column' key={key}>
                     <div className='ab-details-title'>
                         <p> { key } </p>
@@ -36,6 +39,7 @@ class Phone extends React.Component{
                         <p> { value } </p>
                     </div>
                 </div>
+                
             );
            
         });
@@ -68,7 +72,8 @@ class Phone extends React.Component{
                         {phone.description}
                     </p>
                 </div>
-            </div>
+                </div>
+            
         );
     };
 
@@ -103,6 +108,10 @@ class Phone extends React.Component{
         const {phone} = this.props;
         return(
             <div className='view-container'>
+                
+                <div>
+                        <Header/>
+                </div>
                 <div className='container'>
                     <div className='col-md-9'>
                         {phone && this.renderContent()}
@@ -110,6 +119,9 @@ class Phone extends React.Component{
                     <div className='col-md-3'>
                         {phone && this.renderSideBar()}
                     </div>
+                </div>
+                <div>
+                        <Footer/>
                 </div>
             </div>
         );

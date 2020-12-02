@@ -4,6 +4,8 @@ import { getTotalBasketPrice,getBasketPhonesWithCount } from '../selectors/Phone
 import R from 'ramda';
 import {removePhoneFromBasket,cleanBasket,basketCheckout} from '../actions/Phones';
 import {Link} from 'react-router';
+import Footer from './Footer';
+import Header from './Header';
 
 const Basket = ({phones,totalPrice,
                 removePhoneFromBasket,cleanBasket,
@@ -94,6 +96,9 @@ const Basket = ({phones,totalPrice,
 
     return(
         <div className="view-container">
+            <div>
+                        <Header/>
+                </div>
             <div className="container">
                 <div className="row">
                     <div className="col-md-9">
@@ -104,6 +109,9 @@ const Basket = ({phones,totalPrice,
                     </div>
                 </div>
             </div>
+            <div>
+                        <Footer/>
+                </div>
         </div>
     );
     };

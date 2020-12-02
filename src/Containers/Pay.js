@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
 
 class Pay extends React.Component {
     render() {
@@ -25,6 +27,11 @@ class Pay extends React.Component {
 
         //         </div>
         //       </div>
+        
+        <div className='view-container'>
+        <div >
+                    <Header/>
+                </div>
         <div>
                     <p></p>
                       <button ><a href="/cardpay">Pay by Card</a>
@@ -32,6 +39,12 @@ class Pay extends React.Component {
                       <button><a href="/emailpay">Pay by Email</a>
                           </button>
                     <p></p>
+                    
+
+ </div>            
+ <div>
+     <Footer/>
+ </div>
  </div>
             
         )

@@ -46,6 +46,7 @@ import R from 'ramda';
     return(
         <div className="well">
             <h4>Brand</h4>
+            
             <div className="list-group">
                 {renderAllCategory()}
                 {
@@ -56,6 +57,7 @@ import R from 'ramda';
             }
             </div>
         </div>
+        
     );
 };
 
