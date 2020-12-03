@@ -8,6 +8,54 @@
     z-index: 100500;
 }
 
+#floatleft {
+   padding-left: 10px;
+}
+
+#menu_top {
+	background: #141414;
+    height: 40px;
+}
+
+.menu_top {
+    margin-left: -1px;
+}
+
+#menu_top ul {
+    margin: 0px;
+	padding: 0px;
+}
+
+#menu_top ul li {
+    list-style: none;
+    float: left;
+}
+
+#menu_top ul li a {
+	text-decoration: none;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	padding: 0px 20px 0px 20px;
+	border-right: 1px solid #ccc;
+}
+
+#menu_top ul li a.active {
+	background: #1949b5;
+}
+
+.margintopwithheader {
+    margin-top: -40px;;
+}
+.margintop {
+    margin-top: 20px;;
+}
+
+#floatleft a {
+    float: right;
+    padding-right: 0px;
+}
 #page-preloader .spinner {
     width: 64px;
     height: 64px;
