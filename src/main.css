@@ -11,7 +11,7 @@
 #fixNav{
     width: 100%;
     height: 35px;
-    background-color: #265325;
+    background-color: black;
     display: block;
     position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
     top: 0; /*Nằm trên cùng*/
