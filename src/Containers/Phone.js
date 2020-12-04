@@ -112,7 +112,7 @@ class Phone extends React.Component{
                 <div>
                         <Header/>
                 </div>
-                <div className='container'>
+                <div className='container' style={{marginTop:"40px"}}>
                     <div className='col-md-9'>
                         {phone && this.renderContent()}
                     </div>

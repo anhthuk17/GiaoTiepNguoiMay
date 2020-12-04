@@ -6,7 +6,7 @@ import Categories from './Categories';
 export const SideBar = ()=>{
     return(
         <div>
-            <BasketCart/>
+            {/* <BasketCart/> */}
             <Search/>
             <Categories/>
         </div>

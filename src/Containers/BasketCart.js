@@ -15,7 +15,8 @@ export const BasketCart = (props)=>{
                     className="btn btn-inverse btn-block btn-large"
                 >
                     <i className="fa fa-fa-shopping-cart" />
-                    <span>{totalBasketCount} item(s) -{totalPrice}</span>
+                    {/* <span>{totalBasketCount} Giỏ hàng -{totalPrice}</span> */}
+                    <span> Giỏ hàng</span>
                 </Link>
             </div>
         </div>

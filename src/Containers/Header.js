@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import BasketCart from './BasketCart';
 class Header extends Component {
     render() {
       return (
@@ -17,6 +17,9 @@ class Header extends Component {
                 <li><a href="#">Liên hệ qua SĐT</a></li>
               </ul>
             </li>
+          </ul>
+          <ul className="nav navbar-nav navbar-right" style={{marginRight:"200px"}}>
+            <BasketCart/>
           </ul>
         </nav>
       );

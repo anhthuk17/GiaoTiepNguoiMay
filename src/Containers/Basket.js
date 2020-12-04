@@ -99,7 +99,7 @@ const Basket = ({phones,totalPrice,
             <div>
                         <Header/>
                 </div>
-            <div className="container">
+            <div className="container" style={{marginTop:"40px"}}>
                 <div className="row">
                     <div className="col-md-9">
                         {renderContent()}
@@ -109,7 +109,7 @@ const Basket = ({phones,totalPrice,
                     </div>
                 </div>
             </div>
-            <div>
+            <div style={{position:"absolute",bottom:"0",width:"100%"}}> 
                         <Footer/>
                 </div>
         </div>
