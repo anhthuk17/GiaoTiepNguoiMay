@@ -32,7 +32,7 @@ export const getPhones = (state,ownProps)=>{
 };
 
 export const getRenderedPhonesLength = state => R.length(state.PhonesPage.ids);
-
+//Tổng giá tất cả các sản phẩm
 export const getTotalBasketPrice = state=>{
     
     const phones = R.map(id=>getPhonesById(state,id),state.Basket);
@@ -43,16 +43,16 @@ export const getTotalBasketPrice = state=>{
     }, total);
     // console.log("Phone total is ", phnTotal);
 };
-
+//Tổng số lượng sản phẩm
 export const getTotalBasketCount = state=>{
     return state.Basket.length;
 };
-
+// lấy loại sp
 export const getCategories = (state)=>{
     // console.log(" fething categories from state " ,R.values(state.Categories));
     return R.values(state.Categories);
 };
-
+//lấy  sp loại mình muốn ra
 export const getActiveCategoryId = ownProps=>{
     // console.log("ownProps " , ownProps);
     return R.path(['params','id'],ownProps);

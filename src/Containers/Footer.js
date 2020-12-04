@@ -3,15 +3,19 @@ import React, { Component } from 'react';
 class Footer extends Component {
     render() {
       return (
-        <div style={{backgroundColor:"#0082bb",width:"100%"}}>
+        //nhóm các phần tử để phân chia bố cục
+        <div style={{backgroundColor:"#1949b5",width:"100%"}}>
           <div className="container text-center text-md-left">
             <div className="row">
             <div className="col-md-2 col-lg-4 mx-auto my-md-4 my-0 mt-4 mb-1">
-                <h5 style={{color: 'white'}} className="font-weight-bold text-uppercase mb-4">can you take care</h5>
+                <h5 style={{color: 'white'}} className="font-weight-bold text-uppercase mb-4">Can you take care</h5>
 
-
+                {/* ul xác định 1 danh sách k có thứ tự */}
                 <ul id="fixNav1">
-                <li><a>Iphone</a></li>
+                  {/* li xác định 1 danh mục trong danh sách */}
+                  {/* Tạo một liên kết đến một tài liệu nào đó
+(khi người dùng bấm vào liên kết thì sẽ được chuyển đến tài liệu đó) */}
+                <li><a>LG</a></li>
                 <li><a>SamSung</a></li>
                 <li><a>Galaxy</a></li>
                 <li><a>Nokia</a></li>
@@ -45,11 +49,11 @@ class Footer extends Component {
                   </li>
                   <li>
                     <p>
-                      <i className="fas fa-phone mr-3" /> + 01 234 567 88</p>
+                      <i className="fas fa-phone" />  01 234 567 88</p>
                   </li>
                   <li>
                     <p>
-                      <i className="fas fa-print mr-3" /> + 01 234 567 89</p>
+                      <i className="fas fa-print mr-3" />  01 234 567 89</p>
                   </li>
                 </ul>
               </div>

@@ -42,7 +42,7 @@ const Basket = ({phones,totalPrice,
                                         />
                                     </td>
                                     <td>{phone.name}</td>
-                                    <td>${phone.price}</td>
+                                    <td>{phone.price}đ</td>
                                     <td>{phone.count}</td>
                                     <td>
                                         <span className="delete-cart"
@@ -84,15 +84,27 @@ const Basket = ({phones,totalPrice,
                             <span className="glyphicon glyphicon-envelope"/>
                             Checkout
                             </button> */}
-                            <button
+                            {/* <button
                                 className="btn btn-success"
-                                //onClick={()=>basketCheckout(phones)}
+                                //onClick={()=>basketCheckout(phones)} 
                             >
                             <span className="glyphicon glyphicon-envelope"/>
-                                <Link to="/signin">Checkout</Link>
-                            </button>
+                            <Link  to="/signin">
+                                
+                                <span> Checkout</span>
+                                    </Link>
+                                
+                            </button> */}
+                            <Link
+                        className="btn btn-success"
+                        to="/signin"
+                    >
+                    <span className="glyphicon glyphicon-envelope"/>
+                    <span> Checkout</span>
+                    </Link>
                         </div>
                     }
+                    
                 </div>
             );
         };
@@ -111,7 +123,7 @@ const Basket = ({phones,totalPrice,
                         {renderSidebar()}
                     </div>
                 </div>
-            </div>
+            </div >
             <div style={{position:"fixed",bottom:"0",width:"100%"}}> 
                         <Footer/>
             </div>
@@ -119,12 +131,12 @@ const Basket = ({phones,totalPrice,
     );
     };
 
-
+// tổng sp và tổng giá tiền
 const mapStateToProps = (state)=>({
     phones: getBasketPhonesWithCount(state),
     totalPrice: getTotalBasketPrice(state)
 });
-
+// 3 chức năng trong backet xóa 1 sp, cleanall,checkout
 const mapDispatchToProps = (dispatch)=>({
     removePhoneFromBasket: (id)=>dispatch(removePhoneFromBasket(id)),
     cleanBasket: ()=>dispatch(cleanBasket()),

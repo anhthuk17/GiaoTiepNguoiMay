@@ -51,7 +51,7 @@ export const fetchCategories = ()=>{
         };
     };
 }; 
-
+//Load thêm sản phẩm
 export const loadMore = ()=>{
     
     return async (dispatch,getState) => {
@@ -74,7 +74,7 @@ export const loadMore = ()=>{
         };
     };
 };
-
+//Load sản phẩm theo id (loại)
 export const fetchPhoneById = id=>{
     return async (dispatch,getState) => {
         const offset = getRenderedPhonesLength(getState());

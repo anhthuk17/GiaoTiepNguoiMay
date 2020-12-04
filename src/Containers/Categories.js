@@ -6,7 +6,7 @@ import {compose} from 'redux';
 import classNames from 'classnames';
 import R from 'ramda';
 
-
+//Chọn loại sp
  const Categories = (props)=>{
     const {categories,activeCategoryId} = props;
     // console.log(" activeCategoryId " , activeCategoryId);
@@ -26,7 +26,7 @@ import R from 'ramda';
             </Link>
         );
     };
-
+// All
     const renderAllCategory = ()=>{
         const linkClass = classNames({
             "list-group-item" : true,
@@ -42,7 +42,7 @@ import R from 'ramda';
             </Link>
         );
     };
-
+// cái khung lọc sp
     return(
         <div className="well">
             <h4>Brand</h4>

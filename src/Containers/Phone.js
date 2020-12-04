@@ -12,7 +12,7 @@ import Footer from './Footer';
 class Phone extends React.Component{
 
     componentDidMount = () => this.props.fetchPhoneById(this.props.params.id);
-
+// hiển thị 1 sp cụ thể sau khi kick vào xem thông tin
     renderFields = ()=>{
         const {phone} = this.props;
         const columnFields = R.compose(
