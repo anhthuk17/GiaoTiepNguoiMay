@@ -53,7 +53,7 @@ class Footer extends Component {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-2 col-lg-2 text-center mx-auto my-4">
+              <div className="iconstyle col-md-2 col-lg-2 text-center mx-auto my-4">
                 <h5 className="font-weight-bold text-uppercase mb-4 ">Follow Us</h5>
                 <a type="button" className="btn-floating btn-fb" id="textstyle">
                   <i className="fab fa-facebook-f" />
