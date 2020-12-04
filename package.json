@@ -5,6 +5,8 @@
   "homepage": "https://github.io/GBspace/React-Redux-E-Commerce",
   "dependencies": {
     "classnames": "^2.2.5",
+    "mdbootstrap": "^4.19.2",
+    "mdbreact": "^5.0.0",
     "ramda": "^0.23.0",
     "react": "^15.5.4",
     "react-credit-card-input": "^1.1.5",

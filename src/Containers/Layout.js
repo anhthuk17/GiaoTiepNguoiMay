@@ -1,7 +1,7 @@
 import React from 'react';
 import CenterImag from './CenterImag';
 import Footer from './Footer';
-import Header from './Header';
+import Header from './Header1';
 import {SideBar} from './SideBar';
 
 
@@ -9,10 +9,10 @@ const Layout = ({children})=>{
     return (
 
         <div className="view-container">
-                <Header/>
-                <div className="margintopwithheader">
-                    <CenterImag/>
-                </div>
+            <Header/>
+            <div>
+                <CenterImag/>
+            </div>
 
             <div className="container margintop">   
                 <div className="row">
