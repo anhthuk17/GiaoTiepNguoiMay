@@ -17,7 +17,9 @@ const Basket = ({phones,totalPrice,
     const renderContent = () => {
         return (
             <div>
+                
                 {isBasketEmpty && <div> Your shopping cart is empty </div>}
+                
                 <div className="table-responsive">
                     <table className="table-bordered table-striped table-condensed cf">
                         <tbody>
@@ -110,7 +112,7 @@ const Basket = ({phones,totalPrice,
                 </div>
             </div>
             <div style={{position:"absolute",bottom:"0",width:"100%"}}> 
-                        <Footer/>
+                        {/* <Footer/> */}
                 </div>
         </div>
     );

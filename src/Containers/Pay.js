@@ -33,7 +33,8 @@ class Pay extends React.Component {
                     <Header/>
                 </div>
         <div>
-                    <p></p>
+            <h2>              .                         </h2>
+                    <h2>Payment Methods</h2>
                       <button ><a href="/cardpay">Pay by Card</a>
                           </button>
                       <button><a href="/emailpay">Pay by Email</a>
