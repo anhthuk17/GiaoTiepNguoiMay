@@ -7,7 +7,7 @@ class Footer extends Component {
           <div className="container text-center text-md-left">
             <div className="row">
             <div className="col-md-2 col-lg-4 mx-auto my-md-4 my-0 mt-4 mb-1">
-                <h5 className="font-weight-bold text-uppercase mb-4">can you take care</h5>
+                <h5 style={{color: 'white'}} className="font-weight-bold text-uppercase mb-4">can you take care</h5>
 
 
                 <ul id="fixNav1">
@@ -17,11 +17,11 @@ class Footer extends Component {
                 <li><a>Nokia</a></li>
               </ul>
               </div>
-              <div className="col-md-3 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+              <div style={{color: 'white'}} className="col-md-3 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
                 <h5 className="font-weight-bold text-uppercase mb-4">About</h5>
                 <ul className="list-unstyled">
-                  <li>
-                    <p>
+                  <li > 
+                    <p >
                       <a href="#!">ABOUT US</a>
                     </p>
                   </li>
@@ -32,7 +32,7 @@ class Footer extends Component {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+              <div className=" textColor col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
                 <h5 className="font-weight-bold text-uppercase mb-4">Address</h5>
                 <ul className="list-unstyled">
                   <li>
@@ -53,7 +53,7 @@ class Footer extends Component {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-2 col-lg-2 text-center mx-auto my-4">
+              <div className="textColor col-md-2 col-lg-2 text-center mx-auto my-4">
                 <h5 className="font-weight-bold text-uppercase mb-4">Follow Us</h5>
                 <p>
                 <a type="button" className="btn-floating btn-fb">
@@ -80,7 +80,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div className="footer-copyright text-center py-3">SmartPhone chất lượng: 
+          <div className="textColor footer-copyright text-center py-3">SmartPhone chất lượng: 
             <a href="https://mdbootstrap.com/"> Contact Us</a>
           </div>
           </div>

@@ -44,6 +44,22 @@
     color: white;
   }
 
+  .textColor {
+    color: white;
+  }
+
+  .textColor a{
+    color: white;
+  }
+
+  .textColor p a i {
+    color: white;
+  }
+
+  .textColor p a {
+    color: white;
+  }
+
   .textstyle i {
     color: white;
   }
