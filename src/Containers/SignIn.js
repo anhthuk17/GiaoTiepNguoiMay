@@ -19,7 +19,7 @@ class SignIn extends React.Component {
                 <div >
                     <Header/>
                 </div>
-        <div className="container">
+        <div className="container" style={{marginTop:"40px"}}>
               <div className="panel panel-primary">
                 <div className="panel-heading">
                   <h2 className="text-center">Registation </h2>

@@ -11,7 +11,7 @@ class CardPay extends React.Component {
             <div>
               <Header/>
             </div>
-          <div className="container">
+          <div className="container"style={{marginTop:"40px"}}>
             
           <div className="panel panel-primary">
             <div className="panel-heading">
@@ -47,7 +47,7 @@ class CardPay extends React.Component {
           </div>
           
         </div>
-        <div>
+        <div style={{position:"absolute",bottom:"0",width:"100%"}}>
               <Footer/>
             </div>
         </div>

@@ -17,6 +17,15 @@ const Basket = ({phones,totalPrice,
     const renderContent = () => {
         return (
             <div>
+                {
+                    R.not(isBasketEmpty) &&
+                    <div className="row">
+                        <div className="pull-right total-user-checkout">
+                            <b>Total:</b>
+                            ${totalPrice}
+                        </div>
+                    </div>
+                }
                 {isBasketEmpty && <div> Your shopping cart is empty </div>}
                 <div className="table-responsive">
                     <table className="table-bordered table-striped table-condensed cf">
@@ -42,15 +51,7 @@ const Basket = ({phones,totalPrice,
                         </tbody>
                     </table>
                 </div>
-                {
-                    R.not(isBasketEmpty) &&
-                    <div className="row">
-                        <div className="pull-right total-user-checkout">
-                            <b>Total:</b>
-                            ${totalPrice}
-                        </div>
-                    </div>
-                }
+                
             </div>
             )
         };
@@ -99,7 +100,7 @@ const Basket = ({phones,totalPrice,
             <div>
                         <Header/>
                 </div>
-            <div className="container" style={{marginTop:"40px"}}>
+            <div className="container" style={{marginTop:"40px",marginBottom:"95px"}}>
                 <div className="row">
                     <div className="col-md-9">
                         {renderContent()}
@@ -109,7 +110,7 @@ const Basket = ({phones,totalPrice,
                     </div>
                 </div>
             </div>
-            <div style={{position:"absolute",bottom:"0",width:"100%"}}> 
+            <div style={{position:"fixed",bottom:"0",width:"100%"}}> 
                         <Footer/>
                 </div>
         </div>
