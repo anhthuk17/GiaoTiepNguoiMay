@@ -37,7 +37,7 @@ class EmailPay extends React.Component {
               </div>
             </div>
           </div>
-          <div style={{position:"absolute",bottom:"0",width:"100%"}}>
+          <div style={{position:"absolute",bottom:"0",width:"100%", height:"0%"}}>
             <Footer/>
           </div>
           </div>

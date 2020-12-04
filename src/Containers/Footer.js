@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Footer extends Component {
     render() {
       return (
-        <div style={{backgroundColor:"#0099FF",width:"100%"}}>
+        <div style={{backgroundColor:"#0082bb",width:"100%"}}>
           <div className="container text-center text-md-left">
             <div className="row">
             <div className="col-md-2 col-lg-4 mx-auto my-md-4 my-0 mt-4 mb-1">

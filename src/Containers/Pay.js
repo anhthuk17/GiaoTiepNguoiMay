@@ -39,9 +39,15 @@ class Pay extends React.Component {
                       <button ><a href="/cardpay">Pay by Card</a>
                           </button>
                       <button><a href="/emailpay">Pay by Email</a>
+                      
                           </button>
-                </div>            
-                 <div style={{position:"absolute",bottom:"0",width:"100%"}}> 
+                          <p>
+                              
+                          </p>
+                         
+                </div>   
+                         
+                 <div style={{position:"absolute",bottom:"0",width:"100%", height:"0%"}}> 
                     <Footer/>
                 </div>
         </div>

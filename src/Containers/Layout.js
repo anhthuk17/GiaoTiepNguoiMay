@@ -23,6 +23,9 @@ const Layout = ({children})=>{
                         {children}
                     </div>
                 </div>
+                <p>
+                    
+                </p>
             </div>
 
             <Footer/>

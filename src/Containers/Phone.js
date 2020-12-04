@@ -126,6 +126,12 @@ class Phone extends React.Component{
                         {phone && this.renderSideBar()}
                     </div>
                 </div>
+                <p>
+
+                </p>
+                <p>
+                    
+                </p>
                 <div>
                         <Footer/>
                 </div>
