@@ -1,7 +1,7 @@
 import React from 'react';
 import CenterImag from './CenterImag';
 import Footer from './Footer';
-import Header from './Header1';
+import Header from './Header';
 import {SideBar} from './SideBar';
 
 
