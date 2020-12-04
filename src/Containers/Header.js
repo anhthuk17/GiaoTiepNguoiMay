@@ -6,7 +6,7 @@ class Header extends Component {
   
         <nav id="fixNav">
           <ul>
-            <li><a href="#">Trang chủ</a></li>
+            <li><a href="/">Trang chủ</a></li>
             <li><a href="#">Giới thiệu</a></li>
             <li><a href="#">Sản phầm</a></li>
             <li><a href="#">Giúp đỡ</a></li>

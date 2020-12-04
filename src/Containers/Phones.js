@@ -26,7 +26,7 @@ class Phones extends React.Component{
                 </div>
                 <div className="caption">
                     <h4 className="pull-right">
-                        ${phone.price}
+                        {phone.price}đ
                     </h4>
                     <h4>
                         <Link to={`./Phones/${phone.id}`}>
