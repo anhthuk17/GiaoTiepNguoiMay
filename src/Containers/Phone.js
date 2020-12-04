@@ -49,6 +49,10 @@ class Phone extends React.Component{
         const {phone} = this.props;
         return(
             <div>
+                <div className='form-group'>
+                        <h2>{phone.name}</h2>
+                        
+                    </div>
                 <div className='thumbnail'>
                     <div className="col-md-6">
                         <img className='img-thumbnail'
@@ -63,7 +67,7 @@ class Phone extends React.Component{
                 </div>
                 <div className='caption-full'>
                     <h4 className='pull-right'>
-                        #{phone.price}
+                        {phone.price}đ
                     </h4>
                     <h4>
                         {phone.name}
@@ -82,14 +86,11 @@ class Phone extends React.Component{
         const {phone,addPhoneToBasket} = this.props;
         return(
             <div>
-               <div>
-                    <p className ='lead'> Quick Shop</p>
-                    <BasketCart />
-                    <div className='form-group'>
-                        <h1>{phone.name}</h1>
-                        <h2>{phone.price}</h2>
-                    </div>
-               </div>
+                <h2>Quick Shop</h2>
+                
+                    
+                   
+                
                <Link to="/"
                     className="btn btn-info btn-block">
                     Back to Store
@@ -99,6 +100,11 @@ class Phone extends React.Component{
                         onClick={()=>addPhoneToBasket(phone.id)}>
                     Add To Cart
                 </button>
+                <p></p>
+                <h2>
+                    Total:
+                </h2>
+                <BasketCart />
             </div>
         );
     };

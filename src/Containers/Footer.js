@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 class Footer extends Component {
     render() {
       return (
-  
         <div style={{backgroundColor:"#0099FF",width:"100%"}}>
           <div className="container text-center text-md-left">
             <div className="row">
             <div className="col-md-2 col-lg-4 mx-auto my-md-4 my-0 mt-4 mb-1">
                 <h5 className="font-weight-bold text-uppercase mb-4">can you take care</h5>
 
-              <ul id="fixNav1">
+
+                <ul id="fixNav1">
                 <li><a>Iphone</a></li>
                 <li><a>SamSung</a></li>
                 <li><a>Galaxy</a></li>
@@ -37,7 +37,7 @@ class Footer extends Component {
                 <ul className="list-unstyled">
                   <li>
                     <p>
-                      <i className="fas fa-home mr-3" /> 60 Ngô Sỹ Liên, SmartBuilding Đà Nẵng</p>
+                      <i className="fas fa-home mr-3" /> Tòa nhà SmartBuilding Đà Nẵng</p>
                   </li>
                   <li>
                     <p>
@@ -55,18 +55,28 @@ class Footer extends Component {
               </div>
               <div className="col-md-2 col-lg-2 text-center mx-auto my-4">
                 <h5 className="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+                <p>
                 <a type="button" className="btn-floating btn-fb">
-                  <i className="fab fa-facebook-f" />
+                  <i className="fab fa-facebook-f" /> Facebook
+                  <p></p>
                 </a>
                 <a type="button" className="btn-floating btn-tw">
-                  <i className="fab fa-twitter" />
+                  <i className="fab fa-twitter"/> Twitter
+                  <p></p>
                 </a>
                 <a type="button" className="btn-floating btn-gplus">
-                  <i className="fab fa-google-plus-g" />
+                  <i className="	fab fa-google-plus-square" /> Google
+                  <p></p>
                 </a>
-                <a type="button" className="btn-floating btn-dribbble">
-                  <i className="fab fa-dribbble" />
+                <a type="button" className="btn-floating btn-gplus">
+                  <i className="	fab fa-instagram" /> Instagram
+                  <p></p>
                 </a>
+                <a type="button" className="btn-floating btn-gplus">
+                  <i className="	fab fa-youtube-square" /> Youtube
+                  <p></p>
+                </a>
+                </p>
               </div>
             </div>
           </div>

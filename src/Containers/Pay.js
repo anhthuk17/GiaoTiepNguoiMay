@@ -29,19 +29,22 @@ class Pay extends React.Component {
         //       </div>
         
         <div className='view-container'>
-        <div >
+                 <div >
                     <Header/>
                 </div>
-        <div style={{marginTop:"40px"}}>
+                <div style={{marginTop:"40px"}}>
+                   
+
+                    <h2>Payment Methods</h2>
                       <button ><a href="/cardpay">Pay by Card</a>
                           </button>
                       <button><a href="/emailpay">Pay by Email</a>
                           </button>
- </div>            
- <div style={{position:"absolute",bottom:"0",width:"100%"}}> 
-     <Footer/>
- </div>
- </div>
+                </div>            
+                 <div style={{position:"absolute",bottom:"0",width:"100%"}}> 
+                    <Footer/>
+                </div>
+        </div>
             
         )
     }
