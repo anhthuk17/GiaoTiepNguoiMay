@@ -1,11 +1,11 @@
-import React from 'react';
+
 import {fetchPhones as fetchPhonesApi,
         loadMore as loadMoreApi,
         fetchPhoneById as fetchPhoneByIdApi,
         fetchCategories  as fetchCategoriesApi}  from '../api/fetchPhones';
-import SignIn from '../Containers/SignIn';
-import {getRenderedPhonesLength} from '../selectors/Phones';
 
+import {getRenderedPhonesLength} from '../selectors/Phones';
+import axios from 'axios'
 
 export const fetchPhones = ()=>{
     
@@ -14,7 +14,7 @@ export const fetchPhones = ()=>{
             dispatch({
                 type: 'FETCH_PHONE_START'
             });
-            const phones = await fetchPhonesApi();
+             const phones = await fetchPhonesApi().then(res =>res.data);
             dispatch({
                 type: 'FETCH_PHONE_SUCCESS',
                 payload: phones
@@ -75,14 +75,14 @@ export const loadMore = ()=>{
     };
 };
 //Load sản phẩm theo id (loại)
-export const fetchPhoneById = id=>{
+export const fetchPhoneById = id =>{
     return async (dispatch,getState) => {
         const offset = getRenderedPhonesLength(getState());
         try{
             dispatch({
                 type: 'FETCH_PHONE_BY_ID_START'
             });
-            const phone = await fetchPhoneByIdApi(id);
+            const phone = await fetchPhoneByIdApi(id).then(res => res.data);
             dispatch({
                 type: 'FETCH_PHONE_BY_ID_SUCCESS',
                 payload: phone

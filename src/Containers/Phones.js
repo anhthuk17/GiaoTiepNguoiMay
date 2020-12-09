@@ -16,6 +16,8 @@ class Phones extends React.Component{
     renderPhone = (phone,index)=>{
         const {addPhoneToBasket} = this.props;
         const shortDesc = `${R.take(60,phone.description)}...`;
+        var statusName = phone.status ? 'Còn Hàng' : 'Hết Hàng';
+        var statusClass = phone.status ? 'warning' : 'default';
         return (
             <div className='col-sm-4 col-lg-4 col-md-4 book-list' key={index}>
                 <div className="thumbnail">
@@ -28,12 +30,16 @@ class Phones extends React.Component{
                     <h4 className="pull-right">
                         {phone.price}đ
                     </h4>
+                    <span className={`label label-${statusClass}`}>
+                        {statusName}
+                    </span>
                     <h4>
-                        <Link to={`./Phones/${phone.id}`}>
+                        <Link to={`/Phones/${phone.id}`}>
                             {phone.name}
                         </Link>
                     </h4>
                     <p> {shortDesc}</p>
+
                     <p className='itemButton'>
                         <button className="btn btn-primary"
                                 onClick={()=>addPhoneToBasket(phone.id)}>
@@ -43,6 +49,7 @@ class Phones extends React.Component{
                             className="btn btn-default">
                             More Info
                         </Link>
+                       
                     </p>
                 </div>
             </div>
@@ -58,7 +65,7 @@ class Phones extends React.Component{
                     return this.renderPhone(phone,index);
                 })}
             </div>
-            <div className="row">
+            {/* <div className="row">
                 <div className="col-md-12">
                     <button className="pull-right btn btn-primary"
                             onClick={loadMore}>
@@ -66,7 +73,7 @@ class Phones extends React.Component{
                     </button>
                 </div>
 
-            </div>
+            </div> */}
         </div>            
        
         )};

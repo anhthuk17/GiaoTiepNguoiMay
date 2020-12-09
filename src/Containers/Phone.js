@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {fetchPhoneById,addPhoneToBasket} from '../actions/Phones';
 import {getPhonesById} from '../selectors/Phones';
 import R from 'ramda';
-import BasketCart  from './BasketCart';
+
 import {Link} from 'react-router';
 import Header from './Header';
 import Footer from './Footer';
@@ -24,7 +24,8 @@ class Phone extends React.Component{
                 'weight',
                 'display',
                 'battery',
-                'memory'
+                'memory',
+               
             ])
         )(phone);
         // console.log("columnFields ", columnFields);
@@ -86,11 +87,7 @@ class Phone extends React.Component{
         const {phone,addPhoneToBasket} = this.props;
         return(
             <div>
-                <h2>Quick Shop</h2>
-                
-                    
-                   
-                
+                <h2>SmartPhoneShop</h2>    
                <Link to="/"
                     className="btn btn-info btn-block">
                     Back to Store
@@ -101,10 +98,10 @@ class Phone extends React.Component{
                     Add To Cart
                 </button>
                 <p></p>
-                <h2>
+                {/* <h2>
                     Total:
                 </h2>
-                <BasketCart />
+                <BasketCart /> */}
             </div>
         );
     };

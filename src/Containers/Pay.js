@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
-
+import {Link} from 'react-router';
 class Pay extends React.Component {
     render() {
         return (
@@ -36,18 +36,17 @@ class Pay extends React.Component {
                    
 
                     <h2>Payment Methods</h2>
-                      <button ><a href="/cardpay">Pay by Card</a>
-                          </button>
-                      <button><a href="/emailpay">Pay by Email</a>
-                      
-                          </button>
-                          <p>
-                              
-                          </p>
-                         
+                      {/* <button ><a href="/cardpay">Pay by Card</a>
+                          </button> */}
+                          <Link className="btn btn-success" to="/cardpay">
+                                 <span>Pay by Card</span>
+                        </Link>
+                        <Link className="btn btn-danger" to="/emailpay">
+                                 <span>Pay by Email</span>
+                        </Link>
                 </div>   
                          
-                 <div style={{position:"absolute",bottom:"0",width:"100%", height:"0%"}}> 
+                 <div  style={{position:"fixed",bottom:"0",width:"100%"}}> 
                     <Footer/>
                 </div>
         </div>

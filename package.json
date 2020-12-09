@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://github.io/GBspace/React-Redux-E-Commerce",
   "dependencies": {
+    "axios": "^0.21.0",
     "classnames": "^2.2.5",
     "mdbootstrap": "^4.19.2",
     "mdbreact": "^5.0.0",
