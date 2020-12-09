@@ -47,7 +47,7 @@ class Search extends React.Component{
                         />
                     </form>
                     <span className="input-group-btn">
-                        <button className="btn btn-default">
+                        <button className="btn btn-default" onClick = {searchPhone}>
                             <span className="glyphicon glyphicon-search" />
                         </button>
                     </span>

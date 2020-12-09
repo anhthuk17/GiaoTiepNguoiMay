@@ -1,4 +1,4 @@
-import R from 'ramda';
+import R from 'ramda'; //thu vien xu ly
 
 
 const initialState = {

@@ -8,7 +8,7 @@ import {loadMore,addPhoneToBasket} from '../actions/Phones';
 
 class Phones extends React.Component{
 
-    componentDidMount(){
+    componentDidMount(){ //Được gọi sau khi đã hiển thị component ra ngoài trình duyệt
         this.props.fetchPhones();
         this.props.fetchCategories();
     }

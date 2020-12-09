@@ -14,7 +14,7 @@ import Pay from './Containers/Pay';
 import EmailPay from './Containers/EmailPay';
 import CardPay from './Containers/CardPay';
 
-const store = configureStore();
+const store = configureStore(); //la 1 store
 const history = syncHistoryWithStore(browserHistory,store);
 const jsx = (
     <Provider store={store}>
@@ -35,8 +35,5 @@ const jsx = (
     </Provider>
 );
 
-
-
-
 ReactDOM.render(jsx,document.getElementById('root'));
-
+//render jsx toi DOM
